@@ -22,7 +22,7 @@ function build(config) {
 function write(dest, code, zip) {
   return new Promise((resolve, reject) => {
     function report(extra) {
-      // eslint-disable-next-line
+      // eslint-disable-next-line12
       console.log(blue(path.relative(process.cwd(), dest)) + ' ' + getSize(code) + (extra || ''));
       resolve();
     }
